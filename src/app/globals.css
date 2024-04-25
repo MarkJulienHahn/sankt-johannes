@@ -114,6 +114,7 @@ h4 {
 .twoColumn {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: var(--space-XL);
 }
 
@@ -135,10 +136,9 @@ h4 {
 .imageColumn {
   display: grid;
   place-items: center;
-  width: 500px;
+  width: 30%;
   height: 500px;
   position: relative;
-  background: red;
 }
 
 .imageColumn img {
@@ -152,7 +152,7 @@ h4 {
   padding: var(--space-XS) calc(2 * var(--space-S)) var(--space-XS);
   border-radius: 100px;
   font-size: 20px;
-
+  white-space: nowrap;
   transition: all 0.5s ease;
 }
 
@@ -253,4 +253,104 @@ h4 {
 
 .footerRow {
   display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    word-spacing: -0.5px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h3,
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    word-spacing: -1px;
+  }
+
+  .pageWrapper {
+    padding-top: 200px;
+  }
+
+  .twoColumn {
+    padding-bottom: 200px;
+  }
+
+  .textColumn {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .textColumn p {
+    padding: 0 var(--space-XS);
+  }
+  .textColumn h1,
+  .textColumn h3 {
+    padding: 0 var(--space-S) var(--space-S);
+  }
+  .imageColumn {
+    padding-top: var(--space-XL);
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+  }
+  .imageColumn img {
+    width: 80%;
+  }
+  .navWrapper {
+    font-size: 15pt;
+    line-height: 12pt;
+    padding-top: var(--space-S);
+  }
+  .faqWrapper {
+    padding: 0 var(--space-XS) var(--space-XL);
+  }
+  .frageWrapper p {
+    padding: var(--space-S) var(--space-S) var(--space-M);
+  }
+  .footerWrapper {
+    padding: var(--space-L) var(--space-S);
+    display: block;
+  }
+  .footerColumn {
+    width: 100%;
+    padding: 0 var(--space-M);
+  }
+  .footerBottom {
+    padding: var(--space-L) var(--space-S) var(--space-S);
+    display: block;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    word-spacing: -1px;
+  }
+  .button {
+    font-size: 14px;
+  }
+  .footerColumn p {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    word-spacing: -0.5px;
+  }
+  .pagePadding {
+    padding-left: var(--space-S);
+    padding-right: var(--space-S);
+    padding-bottom: var(--space-L);
+  }
 }
