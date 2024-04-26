@@ -31,7 +31,7 @@ const Frage = ({ frage, accIndex, setAccIndex, i }) => {
       </h2>
       <div
         style={{
-          maxHeight: isOpen ? "1000px" : "0",
+          maxHeight: isOpen ? "2000px" : "0",
           overflow: "hidden",
           transition: "max-height 1s ease-out",
         }}
