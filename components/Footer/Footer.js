@@ -22,7 +22,7 @@ const Footer = ({ footer }) => {
         <div className="footerRow">
           <a href={"/impressum"}>Impressum, </a>
 
-          <a href={"/"}>Datenschutz</a>
+          <a href={"/datenschutz"}>Datenschutz</a>
         </div>
         <span>©{new Date().getFullYear()}, Kirchengemeinde St. Johannes</span>
       </div>

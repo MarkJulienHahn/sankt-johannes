@@ -30,4 +30,11 @@ export const myStructure = (S, context) =>
         .title("Impressum")
         .id("impressum")
         .child(S.document().schemaType("impressum").documentId("impressum")),
+
+      S.listItem()
+        .title("Datenschutz")
+        .id("datenschutz")
+        .child(
+          S.document().schemaType("datenschutz").documentId("datenschutz")
+        ),
     ]);

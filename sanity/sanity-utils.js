@@ -27,3 +27,7 @@ export async function getFaq() {
 export async function getImpressum() {
   return client.fetch(groq`*[_type == "impressum"]{...}`);
 }
+
+export async function getDatenschutz() {
+  return client.fetch(groq`*[_type == "datenschutz"]{...}`);
+}
