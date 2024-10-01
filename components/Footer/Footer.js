@@ -20,7 +20,7 @@ const Footer = ({ footer }) => {
           </div>
           <div>
             <a
-              href="/files/Partizipation-In-Sankt-Johannes_Poster.pdf"
+              href="/files/Partizipation-In-Sankt-Johannes_Poster_A3.pdf"
               download
               className="button secondary"
             >
