@@ -190,7 +190,7 @@ h4 {
 /* PROGRAMM */
 
 .programm__wrapper {
-  margin: 0 var(--space-XL) var(--space-XL);
+  margin: 0 var(--space-XL) var(--space-M);
   border-bottom: 2px solid;
 }
 
@@ -230,7 +230,7 @@ h4 {
 /* FAQ */
 
 .faqWrapper {
-  padding: var(--space-XL) var(--space-XL) var(--space-XL);
+  padding: 0 var(--space-XL) var(--space-XL);
 }
 
 .faqWrapper h2,
@@ -260,6 +260,7 @@ h4 {
 .eroeffnung {
   width: 100%;
   text-align: center;
+  margin-bottom: var(--space-M)
 }
 
 .eroeffnung h3 {
@@ -381,7 +382,7 @@ h4 {
     padding: var(--space-S) var(--space-S) var(--space-M);
   }
   .programm__wrapper {
-    margin: 0 var(--space-XS) var(--space-XL);
+    margin: 0 var(--space-XS) var(--space-M);
   }
   .footerWrapper {
     padding: var(--space-L) var(--space-S);

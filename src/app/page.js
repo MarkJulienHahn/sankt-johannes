@@ -22,8 +22,8 @@ export default async function Home() {
         <h3>Auftaktwochenende</h3>
         <h1>Sankt Johannes lädt vom 11. – 13. Oktober ein</h1>
       </div>
-      <Footer footer={footer[0]} />
       <Programm program={program} />
+      <Footer footer={footer[0]} />
       <Faq faq={faq} />
       <div className="footerBottom">
         <div className="footerRow">
