@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { PortableText } from "next-sanity";
@@ -13,18 +13,21 @@ const Footer = ({ footer }) => {
         </div>
         <div className="footerColumn">
           <p>{footer.kontakt.ueberschrift}</p>
-          <a href={`mailto:${footer.kontakt.email}`} className="button">
-            Schreiben Sie uns eine Email {`   ->`}
-          </a>
+          <div>
+            <a href={`mailto:${footer.kontakt.email}`} className="button">
+              Schreiben Sie uns eine Email {`   ->`}
+            </a>
+          </div>
+          <div>
+            <a
+              href="/files/Partizipation-In-Sankt-Johannes_Poster.pdf"
+              download
+              className="button secondary"
+            >
+              Laden Sie das Plakat runter {`   ->`}
+            </a>
+          </div>
         </div>
-      </div>
-      <div className="footerBottom">
-        <div className="footerRow">
-          <a href={"/impressum"}>Impressum, </a>
-
-          <a href={"/datenschutz"}>Datenschutz</a>
-        </div>
-        <span>©{new Date().getFullYear()}, Kirchengemeinde St. Johannes</span>
       </div>
     </>
   );

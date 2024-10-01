@@ -11,6 +11,12 @@ export const myStructure = (S, context) =>
         context,
       }),
       orderableDocumentListDeskItem({
+        type: "program",
+        title: "Program",
+        S,
+        context,
+      }),
+      orderableDocumentListDeskItem({
         type: "faq",
         title: "FAQ",
         S,

@@ -154,6 +154,7 @@ h4 {
   font-size: 20px;
   white-space: nowrap;
   transition: all 0.5s ease;
+  display: inline-block;
 }
 
 .button:hover {
@@ -186,10 +187,50 @@ h4 {
   text-decoration: none;
 }
 
+/* PROGRAMM */
+
+.programm__wrapper {
+  margin: 0 var(--space-XL) var(--space-XL);
+  border-bottom: 2px solid;
+}
+
+.programm__wrapper h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: var(--space-XS);
+}
+
+.programm__row {
+  border-top: 2px solid;
+  padding: var(--space-XS) 0;
+}
+
+.programm__row--header p + p {
+  padding-top: 0;
+}
+
+.programm__row--header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.programm__row--header.center {
+  justify-content: center;
+}
+
+.programm__row--header p {
+  font-family: "MJH-Book";
+}
+
+.programm__row--description {
+  text-align: right;
+}
+
 /* FAQ */
 
 .faqWrapper {
-  padding: 0 var(--space-XL) var(--space-XL);
+  padding: var(--space-XL) var(--space-XL) var(--space-XL);
 }
 
 .faqWrapper h2,
@@ -216,16 +257,33 @@ h4 {
   font-size: 14pt;
 }
 
+.eroeffnung {
+  width: 100%;
+  text-align: center;
+}
+
+.eroeffnung h3 {
+  padding: 0 var(--space-L) var(--space-S);
+}
+
+.secondary {
+  margin-top: var(--space-S);
+  color: var(--blue);
+  border: 2px solid;
+  background: white;
+}
+
 /* FOOTER */
 
 .footerWrapper {
   display: flex;
-  padding: var(--space-L) var(--space-XL);
+  justify-content: space-between;
+  padding: var(--space-L) var(--space-XL) var(--space-XL);
 }
 
 .footerColumn {
-  width: 50%;
-  padding: 0 var(--space-L);
+  width: 45%;
+  padding: 0;
 }
 
 .footerColumn p {
@@ -321,6 +379,9 @@ h4 {
   }
   .frageWrapper p {
     padding: var(--space-S) var(--space-S) var(--space-M);
+  }
+  .programm__wrapper {
+    margin: 0 var(--space-XS) var(--space-XL);
   }
   .footerWrapper {
     padding: var(--space-L) var(--space-S);

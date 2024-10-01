@@ -14,6 +14,10 @@ export async function getHome() {
   );
 }
 
+export async function getProgram() {
+  return client.fetch(groq`*[_type == "program"]|order(orderRank){...}`);
+}
+
 export async function getFooter() {
   return client.fetch(groq`*[_type == "footer"]{...}`);
 }

@@ -32,6 +32,7 @@ export default defineType({
             },
           ],
         },
+        { name: "poster", title: "Poster", type: "file" },
       ],
     },
 
